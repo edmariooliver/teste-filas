@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return TesteMail::dispatch();
+    TesteMail::dispatch();
+    return "OK";
 });
 

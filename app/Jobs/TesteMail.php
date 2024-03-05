@@ -23,8 +23,9 @@ class TesteMail implements ShouldQueue
     /**
      * Execute the job.
      */
-    public function handle(): void
+    public function handle(array $dados): void
     {
+        
         \Illuminate\Support\Facades\Mail::to('edmariooliveira2002@hotmail.com')->send(new \App\Mail\TesteMail());
     }
 }
