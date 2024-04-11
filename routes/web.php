@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+$user = new \App\Models\User();
+dd($user);
 Route::get('/', function () {
     TesteMail::dispatch();
-    return "OK";
+    return "OK sdad";
 });
 
